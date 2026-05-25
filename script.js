@@ -136,19 +136,19 @@ const produtos = {
                 indicacoes: ['Pé plano e pé cavo', 'Distribuição anormal de pressão', 'Dor plantar crônica', 'Correção postural do membro inferior']
             },
             'palmilha-esportiva': {
+                nome: 'Palmilha Esportiva',
                 imgs: [
                     'assets/pe/palmilha-esportiva.PNG',
                 ],
-                nome: 'Palmilha Esportiva',
                 desc: 'Palmilha com tecnologia de amortecimento e suporte para práticas esportivas. Reduz impacto, controla movimento e melhora performance em atividades de alto impacto.',
                 specs: [['Material', 'Gel + espuma de alta densidade'], ['Amortecimento', 'Avançado'], ['Uso', 'Esporte e corrida'], ['Prazo', '5 a 8 dias']],
                 indicacoes: ['Atletas e praticantes de esporte', 'Corrida e caminhada intensas', 'Prevenção de lesão de impacto', 'Fascite plantar em esportistas']
             },
             'compensacao-sob-molde': {
+                nome: 'Compensação Sob Molde',
                 imgs: [
                     'assets/pe/sob-molde.PNG',
                 ],
-                nome: 'Compensação Sob Molde',
                 desc: 'Sistema de compensação para correção de discreparâncias de comprimento de membros inferiores. Fabricado sob molde para máximo conforto e eficácia.',
                 specs: [['Material', 'EVA + termoplástico'], ['Espessura', 'Variável conforme necessidade'], ['Tipo', 'Sob medida'], ['Prazo', '10 a 15 dias']],
                 indicacoes: ['Discreparância de MMII > 1 cm', 'Assimetria de membros inferiores', 'Desalinhamento pélvico', 'Correção de marcha assimétrica']
