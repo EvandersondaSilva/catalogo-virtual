@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Virtual — Ortopedia Biônica</title>
+    <link rel="icon" href="assets/logo.PNG">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="assets/logo.PNG" alt="logo" class="logo">
+    </header>
+
+    <div class="hero">
+        <h1>Catálogo de<br><em>Especialidades</em></h1>
+        <p>Selecione uma especialidade para visualizar os produtos disponíveis.</p>
+    </div>
+
+    <!-- NAV só aparece no catálogo -->
+    <nav class="nav-wrap" id="main-nav">
+        <button class="nav-tab active" onclick="showSection('coluna',this)">🦴 Coluna</button>
+        <button class="nav-tab" onclick="showSection('pe',this)">🦶 Pé / Tornozelo</button>
+        <button class="nav-tab" onclick="showSection('mao',this)">🦾 Mão / Braço</button>
+        <button class="nav-tab" onclick="showSection('protese',this)">🦿 Próteses</button>
+        <button class="nav-tab" onclick="showSection('joelho',this)">🦵 Joelho / Quadril</button>
+        <button class="nav-tab" onclick="showSection('cabeça',this)"> 🧠 Cabeça</button>
+        <button class="nav-tab" onclick="showSection('cotovelo',this)"> 💪 Cotovelo / Ombro</button>
+    </nav>
+
+    <main>
+
+        <!-- ══════════ CATÁLOGO ══════════ -->
+        <div class="view active" id="view-catalog">
+
+            <!-- COLUNA -->
+            <div id="sec-coluna">
+                <div class="section-header">
+                    <div>
+                        <h2>Coluna</h2>
+                        <p>Produtos para tratamento e reabilitação da coluna vertebral</p>
+                    </div>
+                    <span class="count-badge">7 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('coluna','colete-milwalkee')">
+                        <div class="card-img "> <img src="assets/coluna/colete-milwalke.PNG"></div>
+                        <div class="card-body">
+                            <div class="card-name">Colete Milwaukee</div>
+                            <div class="card-desc">Tratamento de cifose e escoliose</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','ortese-otls')">
+                        <div class="card-img "> <img src="assets/coluna/colete-OTLS.PNG" alt="foto-produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese OTLS</div>
+                            <div class="card-desc">Estabilização toraco-lombo-sacra</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','colete-rigo-cheneau')">
+                        <div class="card-img "> <img src="assets/coluna/colete-rigo-cheneau-3d.PNG"></div>
+                        <div class="card-body">
+                            <div class="card-name">Colete RIGO CHENEAU 3D</div>
+                            <div class="card-desc">Correção tridimensional de escoliose</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','compressor-cdt')">
+                        <div class="card-img "> <img src="assets/coluna/compressao-torax.PNG" alt="foto-produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Compressor Dinâmico de Tórax</div>
+                            <div class="card-desc">Suporte respiratório torácico</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','colete-putti (Alto)')">
+                        <div class="card-img "> <img src="assets/coluna/putti alto.PNG"></div>
+                        <div class="card-body">
+                            <div class="card-name">Colete Putti (Alto)</div>
+                            <div class="card-desc">Suporte cifótico de perfil ajustável</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','colete-putti (Baixo)')">
+                        <div class="card-img "> <img src="assets/coluna/putti-baixo.PNG"></div>
+                        <div class="card-body">
+                            <div class="card-name">Colete Putti (Baixo)</div>
+                            <div class="card-desc">Suporte cifótico de perfil ajustável</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','colete-hipercifose')">
+                        <div class="card-img "> <img src="assets/coluna/colete-hipercifose.PNG"></div>
+                        <div class="card-body">
+                            <div class="card-name">Colete Hipercifose</div>
+                            <div class="card-desc">Suporte cifótico de perfil ajustável</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','colete-jewett')">
+                        <div class="card-img "> <img src="assets/coluna/colete-jewett.PNG"></div>
+                        <div class="card-body">
+                            <div class="card-name">Colete Jewett</div>
+                            <div class="card-desc">Hiperextensor toraco-lombar</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('coluna','colar-cervical')">
+                        <div class="card-img "> <img src="assets/coluna/colar-cervical.PNG"></div>
+                        <div class="card-body">
+                            <div class="card-name">Colar Cervical</div>
+                            <div class="card-desc">Imobilização cervical rígida</div>
+                            <span class="tag tag-green">Coluna</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PÉ -->
+            <div id="sec-pe" style="display:none">
+                <div class="section-header">
+                    <div>
+                        <h2>Pé / Tornozelo</h2>
+                        <p>Soluções ortopédicas para pé e tornozelo</p>
+                    </div>
+                    <span class="count-badge">15 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('pe','dennis-brown')">
+                        <div class="card-img "> <img src="assets/pe/denis-brown.PNG" alt="Dennis Brown"> </div>
+                        <div class="card-body">
+                            <div class="card-name">Dennis Brown</div>
+                            <div class="card-desc">Pé torto congênito</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','afo-fixa')">
+                        <div class="card-img bg-blue"> <img src="assets/pe/afo-fixa.PNG" alt="AFO Fixa"> </div>
+                        <div class="card-body">
+                            <div class="card-name">AFO Fixa</div>
+                            <div class="card-desc">Órtese rígida tornozelo-pé</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','afo-articulada-novo')">
+                        <div class="card-img bg-blue"> <img src="assets/pe/afo-articulada.PNG" alt="AFO Articulada">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">AFO Articulada</div>
+                            <div class="card-desc">Órtese articulada para marcha</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','smo')">
+                        <div class="card-img bg-blue"> <img src="assets/pe/SMO.PNG" alt="SMO"> </div>
+                        <div class="card-body">
+                            <div class="card-name">SMO</div>
+                            <div class="card-desc">Órtese supramaleoar</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','palmilha-sob-molde')">
+                        <div class="card-img bg-blue"> <img src="assets/pe/palmilha-sob-molde.PNG"
+                                alt="Palmilha Sob Molde"> </div>
+                        <div class="card-body">
+                            <div class="card-name">Palmilha Sob Molde</div>
+                            <div class="card-desc">Suporte personalizado do pé</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','palmilha-esportiva')">
+                        <div class="card-img bg-blue"> <img src="assets/pe/palmilha-esportiva.PNG"
+                                alt="Palmilha Esportiva"> </div>
+                        <div class="card-body">
+                            <div class="card-name">Palmilha Esportiva</div>
+                            <div class="card-desc">Suporte para atividades físicas</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','compensacao-sob-molde')">
+                        <div class="card-img bg-blue"> <img src="assets/pe/sob-molde.PNG" alt="Compensação Sob Molde">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Compensação Sob Molde</div>
+                            <div class="card-desc">Correção de discrepância de MMII</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','tenis-ortopedico')">
+                        <div class="card-img "> <img src="assets/pe/tenis-ortopedico.PNG" alt="logo produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Tênis Ortopédico</div>
+                            <div class="card-desc">Calçado com suporte especial</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','calcanheiras-silicone')">
+                        <div class="card-img "> <img src="assets/pe/calcanheira-silicone.PNG" alt=" logo produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Calcanheiras de Silicone</div>
+                            <div class="card-desc">Amortecimento para talão</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','almofada-plantar')">
+                        <div class="card-img "> <img src="assets/pe/almofada-plantar.PNG" alt=" logo produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Almofada Plantar</div>
+                            <div class="card-desc">Alívio de pressão metatarsal</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','kit-fascite-plantar')">
+                        <div class="card-img "> <img src="assets/pe/noturna-fascite-plantar.PNG" alt="logo produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese Noturna para Fascite Plantar</div>
+                            <div class="card-desc">Tratamento completo de fascite</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','ortese-halux-valgus')">
+                        <div class="card-img "> <img src="assets/pe/halux-valgus.PNG" alt="Órtese para Hálux Valgus">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese para Hálux Valgus</div>
+                            <div class="card-desc">Correção do joanete</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','meia-compressao')">
+                        <div class="card-img "> <img src="assets/pe/meia-compressao.PNG" alt="Meia de Compressão">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Meia de Compressão</div>
+                            <div class="card-desc">Suporte vascular e linfático</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','sandalia-baruk-augusta')">
+                        <div class="card-img "> <img src="assets/pe/sandalia-baruk.PNG" alt="logo produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Sandália Baruk</div>
+                            <div class="card-desc">Calçado de pós-cirúrgico</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','tornozeleira-rigida')">
+                        <div class="card-img "> <img src="assets/pe/tornozeleira-rigida.PNG" alt="Tornozeleira Rígida">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Tornozeleira Rígida</div>
+                            <div class="card-desc">Estabilização pós-lesão</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÃO -->
+            <div id="sec-mao" style="display:none">
+                <div class="section-header">
+                    <div>
+                        <h2>Mão / Braço</h2>
+                        <p>Órteses e próteses para membro superior</p>
+                    </div>
+                    <span class="count-badge">9 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('mao','mao-bionica')">
+                        <div class="card-img "> <img src="assets/mao-braco/mao-bionica.PNG" alt="Mão Biônica">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Mão Biônica</div>
+                            <div class="card-desc">Prótese mioelétrica</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','mao-estetica')">
+                        <div class="card-img "> <img src="assets/mao-braco/mao-estetica.PNG" alt="Mão Estética">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Mão Estética</div>
+                            <div class="card-desc">Prótese cosmética em silicone</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','ortese-punho')">
+                        <div class="card-img "> <img src="assets/mao-braco/ortese-punho.PNG" alt="Órtese de Punho">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese de Punho</div>
+                            <div class="card-desc">Dinâmica para tração de dedos</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','imobilizador-punho')">
+                        <div class="card-img "> <img src="assets/mao-braco/imobilizador-punho.PNG" alt="logo produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Imobilizador de Punho</div>
+                            <div class="card-desc">Estabilização rígida para punho</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','imobilizador-punho-dedo')">
+                        <div class="card-img "> <img src="assets/mao-braco/imobilizador-punhos-dedos.PNG"
+                                alt=" logo produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Imobilizador de Punhos e dedos</div>
+                            <div class="card-desc">Suporte para punho e dedo</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','ortese-sob-medida-punho-mao-dedo')">
+                        <div class="card-img "> <img src="assets/mao-braco/punho-mao-dedo.PNG"
+                                alt="Órtese Sob Medida de Punho, Mão e Dedo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese Sob Medida de Punho, Mão e Dedo</div>
+                            <div class="card-desc">Suporte personalizado completo</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','ortese-dedo-martelo')">
+                        <div class="card-img "> <img src="assets/mao-braco/dedo-em-martelo.PNG"
+                                alt="Órtese para Dedo em Martelo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese para Dedo em Martelo</div>
+                            <div class="card-desc">Redução e alinhamento digital</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','atadura-elastica')">
+                        <div class="card-img "> <img src="assets/mao-braco/atadura-elastica.PNG" alt="Atadura Elástica">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Atadura Elástica</div>
+                            <div class="card-desc">Compressão e apoio leve</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('mao','ortese-cotovelo')">
+                        <div class="card-img "> <img src="assets/mao-braco/ortese-cotovelo.PNG"
+                                alt="Órtese de Cotovelo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese de Cotovelo</div>
+                            <div class="card-desc">Fixação de 0° a 120°</div>
+                            <span class="tag tag-amber">Mão</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRÓTESES -->
+            <div id="sec-protese" style="display:none">
+                <div class="section-header">
+                    <div>
+                        <h2>Próteses</h2>
+                        <p>Soluções protéticas para membros superiores e inferiores</p>
+                    </div>
+                    <span class="count-badge">6 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('protese','transtibial')">
+                        <div class="card-img "> <img src="assets/Protese/protese-transtibial.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Prótese Transtibial</div>
+                            <div class="card-desc">Abaixo do joelho — carbono</div>
+                            <span class="tag tag-coral">Prótese</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('protese','transfemoral')">
+                        <div class="card-img "> <img src="assets/Protese/protese-transfemural.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Prótese Transfemoral</div>
+                            <div class="card-desc">Acima do joelho mecânico</div>
+                            <span class="tag tag-coral">Prótese</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('protese','syme')">
+                        <div class="card-img "> <img src="assets/Protese/protese-syme.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Prótese de Syme</div>
+                            <div class="card-desc">Amputação no nível do tornozelo</div>
+                            <span class="tag tag-coral">Prótese</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('protese','chorpat')">
+                        <div class="card-img "> <img src="assets/Protese/protese-chorpat.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Prótese de Chorpat</div>
+                            <div class="card-desc">Amputação no nível do joelho</div>
+                            <span class="tag tag-coral">Prótese</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('protese','dedo-estetico-silicone')">
+                        <div class="card-img "> <img src="assets/Protese/dedo-silicone.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Prótese estética de dedo em silicone</div>
+                            <div class="card-desc">Cosmética para amputação digital</div>
+                            <span class="tag tag-coral">Prótese</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('protese','revestimento-estetico')">
+                        <div class="card-img "> <img src="assets/Protese/revestimento-estetico.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Revestimento estético</div>
+                            <div class="card-desc">Para atividades esportivas</div>
+                            <span class="tag tag-coral">Prótese</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JOELHO -->
+            <div id="sec-joelho" style="display:none">
+                <div class="section-header">
+                    <div>
+                        <h2>Joelho / Quadril</h2>
+                        <p>Estabilizadores e suportes para joelho e quadril</p>
+                    </div>
+                    <span class="count-badge">6 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('joelho','imobilizador-joelho')">
+                        <div class="card-img "> <img src="assets/joelho-quadril/imobilizador-joelho.PNG"
+                                alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Imobilizador de Joelho</div>
+                            <div class="card-desc">Estabilização rígida pós-lesão</div>
+                            <span class="tag tag-coral">Joelho</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('joelho','joelheira-articulada')">
+                        <div class="card-img "> <img src="assets/joelho-quadril/joelheira-articulada.PNG"
+                                alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Joelheira Articulada</div>
+                            <div class="card-desc">Suporte com movimento controlado</div>
+                            <span class="tag tag-coral">Joelho</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('joelho','kafo')">
+                        <div class="card-img "> <img src="assets/joelho-quadril/kafo.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese KAFO</div>
+                            <div class="card-desc">Joelho, tornozelo e pé</div>
+                            <span class="tag tag-coral">Joelho</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('joelho','hkafo')">
+                        <div class="card-img "> <img src="assets/joelho-quadril/hkafo.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese HKAFO</div>
+                            <div class="card-desc">Quadril, joelho, tornozelo e pé</div>
+                            <span class="tag tag-coral">Quadril</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('joelho','brace')">
+                        <div class="card-img "> <img src="assets/joelho-quadril/brace.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Brace</div>
+                            <div class="card-desc">Suporte leve para joelho</div>
+                            <span class="tag tag-coral">Joelho</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('joelho','joelheira-articulada-haste-lateral')">
+                        <div class="card-img "> <img src="assets/joelho-quadril/haste-lateral.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Joelheira Articulada com Haste Lateral</div>
+                            <div class="card-desc">Estabilização avançada com hastes</div>
+                            <span class="tag tag-coral">Joelho</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('joelho','dinamica')">
+                        <div class="card-img "> <img src="assets/joelho-quadril/dinamica.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese Dinâmica</div>
+                            <div class="card-desc">Estimulação funcional</div>
+                            <span class="tag tag-coral">Órtese</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CABEÇA -->
+            <div id="sec-cabeça" style="display:none">
+                <div class="section-header">
+                    <div>
+                        <h2>Cabeça</h2>
+                        <p>Órteses cranianas e reabilitação de assimetrias</p>
+                    </div>
+                    <span class="count-badge">2 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('cabeça','ortese-craniana')">
+                        <div class="card-img bg-indigo"> <img src="assets/cabeca/ortese-craniana.PNG"
+                                alt="logo produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese Craniana</div>
+                            <div class="card-desc">Correção de deformidades cranianas</div>
+                            <span class="tag tag-coral">Cabeça</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('cabeça','reabilitacao-assimetria-torcicolo')">
+                        <div class="card-img "> <img src="assets/cabeca/torcicolo.PNG" alt="foto-produto"></div>
+                        <div class="card-body">
+                            <div class="card-name">Reabilitação de Assimetria e Torcicolo Congênito</div>
+                            <div class="card-desc">Programa de correção de assimetrias</div>
+                            <span class="tag tag-coral">Cabeça</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COTOVELO / OMBRO -->
+            <div id="sec-cotovelo" style="display:none">
+                <div class="section-header">
+                    <div>
+                        <h2>Cotovelo / Ombro</h2>
+                        <p>Tipoias, órteses e suportes para ombro e cotovelo</p>
+                    </div>
+                    <span class="count-badge">6 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('cotovelo','tipoia-simples')">
+                        <div class="card-img "> <img src="assets/cotovelo-ombro/tipoia-simples.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Tipoia Simples</div>
+                            <div class="card-desc">Suspensão simples para ombro</div>
+                            <span class="tag tag-coral">Cotovelo</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('cotovelo','tipoia-abduccao')">
+                        <div class="card-img "> <img src="assets/cotovelo-ombro/tipoia-almofada-abducao.PNG"
+                                alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Tipoia com Almofada de Abdução</div>
+                            <div class="card-desc">Posicionamento de ombro em abdução</div>
+                            <span class="tag tag-coral">Cotovelo</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('cotovelo','ortese-imobilizadora-ombro')">
+                        <div class="card-img "> <img src="assets/cotovelo-ombro/imobilizadora-ombro.PNG"
+                                alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese Imobilizadora para Ombro</div>
+                            <div class="card-desc">Imobilização rígida total</div>
+                            <span class="tag tag-coral">Cotovelo</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('cotovelo','ortese-sarmiento')">
+                        <div class="card-img "> <img src="assets/cotovelo-ombro/sarmiento.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese de Sarmiento</div>
+                            <div class="card-desc">Suporte funcional em Y</div>
+                            <span class="tag tag-coral">Cotovelo</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('cotovelo','espaldeira-postural')">
+                        <div class="card-img "> <img src="assets/cotovelo-ombro/postural-ombros.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Espaldeira Postural de Ombros</div>
+                            <div class="card-desc">Correção de postura e cifose</div>
+                            <span class="tag tag-coral">Cotovelo</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('cotovelo','ortese-tennis-elbow')">
+                        <div class="card-img "> <img src="assets/cotovelo-ombro/tenis-elbow.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Órtese para Lesão de Tênis Elbow</div>
+                            <div class="card-desc">Suporte para epicondilite lateral</div>
+                            <span class="tag tag-coral">Cotovelo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /view-catalog -->
+
+
+        <div class="view" id="view-detail">
+            <button class="back-btn" id="back-btn" onclick="goBack()">← Voltar</button>
+
+            <div class="detail-wrap">
+                <div class="detail-img-box" id="detail-img-box">
+                    <span id="detail-icon" style="font-size:96px"></span>
+                </div>
+
+                <div class="detail-info">
+                    <div class="detail-tag"><span class="tag" id="detail-tag"></span></div>
+                    <div class="detail-name" id="detail-name"></div>
+                    <div class="detail-desc" id="detail-desc"></div>
+
+                    <div class="divider"></div>
+                    <div class="info-label">Especificações</div>
+                    <div class="specs-grid" id="detail-specs"></div>
+
+                    <div class="divider"></div>
+                    <div class="info-label">Indicações clínicas</div>
+                    <div class="indications" id="detail-indications"></div>
+
+                    <div class="divider"></div>
+                    <button class="cta-btn" id="cta-whatsapp">Solicitar
+                        informações sobre este produto</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>Ortopedia Biônica · Catálogo Virtual © 2026 · Uso exclusivo para representantes
+        <br><br>
+
+        <a class="link-footer" href="https://www.instagram.com/ortopediabionica/" target="_blank">📸
+            @ortopediabionica</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
