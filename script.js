@@ -353,7 +353,7 @@ const produtos = {
             },
             'chorpat': {
                 nome: 'Prótese de Chorpat',
-                imgs: ['assets/protese/protese-chorpat.PNG'],
+                imgs: ['assets/protese/protese-choupart.PNG'],
                 desc: 'Prótese para amputação no nível do joelho (Chorpat), com articulação condilar e sistema de travamento. Indicada para amputações congênitas ou traumáticas.',
                 specs: [['Nível', 'Joelho (Chorpat)'], ['Articulação', 'Condilar com travamento'], ['Encaixe', 'Personalizado'], ['Prazo', '20 a 25 dias']],
                 indicacoes: ['Amputação congênita de joelho', 'Amputação traumática no joelho', 'Falência congênita de membro inferior', 'Reabilitação pediátrica']
