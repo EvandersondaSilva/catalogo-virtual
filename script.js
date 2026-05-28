@@ -495,6 +495,16 @@ const produtos = {
                 desc: 'Órtese com componentes dinâmicos para estimulação funcional de membros com fraqueza ou paralisia parcial. Facilita movimentos ativos residuais.',
                 specs: [['Tipo', 'Dinâmica com molas'], ['Material', 'Termoplástico + aço'], ['Ajuste', 'Tensão graduável'], ['Prazo', '7 a 10 dias']],
                 indicacoes: ['Hemiplegia e AVC', 'Lesão de plexo braquial', 'Neuropatia periférica', 'Reabilitação funcional pós-lesão']
+            },
+            'almofada-abducao-quadril': {
+                icon: '🛏️',
+                nome: 'Almofada de Abdução do Quadril Pós-Cirúrgico',
+                imgs: [
+                    'assets/joelho-quadril/almofada-abducao-pos-cirurgico.PNG'
+                ],
+                desc: 'Almofada de abdução para posicionamento confortável e seguro durante a recuperação pós-operatória de quadril.',
+                specs: [['Material', 'Espuma viscoelástica + tecido médico'], ['Tipo', 'Posicionamento abdução'], ['Uso', 'Pós-operatório de quadril'], ['Prazo', 'Imediato/estoque']],
+                indicacoes: ['Pós-artroplastia de quadril', 'Redução de luxação de quadril', 'Displasia de quadril adulta', 'Recuperação com posicionamento abdução']
             }
         }
     },
@@ -518,6 +528,16 @@ const produtos = {
                 desc: 'Programa multidisciplinar de reabilitação especializada para correção de assimetrias cervicais e torcicolo congênito. Inclui exercícios terapêuticos, alongamentos, mobilização passiva e acompanhamento fisioterapêutico contínuo.',
                 specs: [['Abordagem', 'Multidisciplinar'], ['Duração', '3 a 6 meses'], ['Frequência', '2 a 3x por semana'], ['Prazo', 'Imediato']],
                 indicacoes: ['Torcicolo congênito', 'Assimetria cervical postural', 'Plagiocefalia associada', 'Reabilitação precoce de deformidades']
+            },
+            'avaliacao-assimetria-craniana-3d': {
+
+                nome: 'Avaliação de Assimetria Craniana por Escaneamento 3D',
+                imgs: [
+                    'assets/cabeca/assimetria-craniana.JPEG'
+                ],
+                desc: 'Avaliação de assimetria craniana com escaneamento tridimensional para diagnóstico preciso e planejamento de tratamento personalizado.',
+                specs: [['Método', 'Escaneamento 3D'], ['Saída', 'Relatório anatômico'], ['Aplicação', 'Planejamento de órtese'], ['Prazo', 'Imediato/agenda']],
+                indicacoes: ['Plagiocefalia posicional', 'Braquicefalia', 'Assimetria craniana', 'Planejamento de órtese craniana']
             }
         }
     },
