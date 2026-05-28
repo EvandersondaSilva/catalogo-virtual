@@ -608,7 +608,7 @@ let currentProductKey = null;
 // ─── NAVEGAÇÃO POR SEÇÃO ───
 function showSection(id, btn) {
     currentSection = id;
-    const secIds = ['coluna', 'pe', 'mao', 'protese', 'orteses', 'joelho', 'cabeça', 'cotovelo'];
+    const secIds = ['coluna', 'cabeça', 'cotovelo', 'joelho', 'mao', 'orteses', 'pe', 'protese'];
     secIds.forEach(s => {
         const el = document.getElementById('sec-' + s);
         if (el) el.style.display = s === id ? 'block' : 'none';
