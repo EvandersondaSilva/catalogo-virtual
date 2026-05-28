@@ -29,6 +29,7 @@
         <button class="nav-tab" onclick="showSection('pe',this)">🦶 Pé / Tornozelo</button>
         <button class="nav-tab" onclick="showSection('mao',this)">🦾 Mão / Braço</button>
         <button class="nav-tab" onclick="showSection('protese',this)">🦿 Próteses</button>
+        <button class="nav-tab" onclick="showSection('orteses',this)">🚶 Orteses</button>
         <button class="nav-tab" onclick="showSection('joelho',this)">🦵 Joelho / Quadril</button>
         <button class="nav-tab" onclick="showSection('cabeça',this)"> 🧠 Cabeça</button>
         <button class="nav-tab" onclick="showSection('cotovelo',this)"> 💪 Cotovelo / Ombro</button>
@@ -131,7 +132,7 @@
                         <h2>Pé / Tornozelo</h2>
                         <p>Soluções ortopédicas para pé e tornozelo</p>
                     </div>
-                    <span class="count-badge">15 produtos</span>
+                    <span class="count-badge">17 produtos</span>
                 </div>
                 <div class="grid">
                     <div class="product-card" onclick="openDetail('pe','dennis-brown')">
@@ -261,6 +262,23 @@
                         <div class="card-body">
                             <div class="card-name">Tornozeleira Rígida</div>
                             <div class="card-desc">Estabilização pós-lesão</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','podoscopio')">
+                        <div class="card-img "> <img src="assets/pe/podoscopia.JPEG" alt="Podoscópio"> </div>
+                        <div class="card-body">
+                            <div class="card-name">Podoscópio</div>
+                            <div class="card-desc">Análise da biomecânica do pé</div>
+                            <span class="tag tag-blue">Pé</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('pe','baropodometria-computadorizada')">
+                        <div class="card-img "> <img src="assets/pe/baropodometria-computadorizada.JPEG"
+                                alt="Baropodometria Computadorizada"> </div>
+                        <div class="card-body">
+                            <div class="card-name">Baropodometria Computadorizada</div>
+                            <div class="card-desc">Análise dinâmica de pressão plantar</div>
                             <span class="tag tag-blue">Pé</span>
                         </div>
                     </div>
@@ -428,6 +446,36 @@
                             <div class="card-name">Revestimento estético</div>
                             <div class="card-desc">Para atividades esportivas</div>
                             <span class="tag tag-coral">Prótese</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ORTESES -->
+            <div id="sec-orteses" style="display:none">
+                <div class="section-header">
+                    <div>
+                        <h2>Orteses</h2>
+                        <p>Órteses e dispositivos de auxílio para mobilidade</p>
+                    </div>
+                    <span class="count-badge">2 produtos</span>
+                </div>
+                <div class="grid">
+                    <div class="product-card" onclick="openDetail('orteses','muleta-auxiliar')">
+                        <div class="card-img "> <img src="assets/ortese/muleta-auxiliar.PNG" alt="foto-produto"> </div>
+                        <div class="card-body">
+                            <div class="card-name">Muleta Auxiliar</div>
+                            <div class="card-desc">Suporte para deambulação assistida</div>
+                            <span class="tag tag-coral">Ortese</span>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openDetail('orteses','muleta-canadense')">
+                        <div class="card-img "> <img src="assets/ortese/muleta-canadense.PNG" alt="foto-produto">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name">Muleta Canadense</div>
+                            <div class="card-desc">Órtese com suporte de antebraço</div>
+                            <span class="tag tag-coral">Ortese</span>
                         </div>
                     </div>
                 </div>

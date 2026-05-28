@@ -224,6 +224,24 @@ const produtos = {
                 desc: 'Estabilizador rígido de tornozelo para imobilização parcial após lesões ligamentares ou cirurgias. Permite a marcha com suporte adequado.',
                 specs: [['Material', 'Polipropileno + velcro'], ['Tamanhos', 'P, M, G, GG'], ['Uso', 'Deambulação'], ['Prazo', 'Imediato (estoque)']],
                 indicacoes: ['Entorse grau II e III', 'Pós-artroscopia de tornozelo', 'Instabilidade crônica de tornozelo', 'Fratura de fíbula com tratamento conservador']
+            },
+            'podoscopio': {
+                nome: 'Podoscópio',
+                imgs: [
+                    'assets/pe/podoscopia.JPEG',
+                ],
+                desc: 'Equipamento de diagnóstico que permite visualização dinâmica da estrutura e biomecânica do pé durante o apoio. Utilizado para análise postural, distribuição de cargas e detecção de problemas estruturais.',
+                specs: [['Tipo', 'Equipamento diagnóstico'], ['Aplicação', 'Análise biomecânica'], ['Visualização', 'Imagem projetada'], ['Prazo', 'Sob avaliação']],
+                indicacoes: ['Análise de postura de pé', 'Avaliação de distribuição de pressão plantar', 'Diagnóstico de deformidades estruturais', 'Planejamento de órteses personalizadas']
+            },
+            'baropodometria-computadorizada': {
+                nome: 'Baropodometria Computadorizada',
+                imgs: [
+                    'assets/pe/baropodometria-computadorizada.JPEG',
+                ],
+                desc: 'Sistema de análise biomecânica avançada que mapeia pressão plantar em tempo real durante a marcha. Fornece dados precisos sobre distribuição de cargas, simetria e padrões de movimento.',
+                specs: [['Tipo', 'Sistema de análise dinâmica'], ['Medição', 'Pressão plantar em tempo real'], ['Análise', 'Marcha e postura'], ['Prazo', 'Sob avaliação']],
+                indicacoes: ['Análise dinâmica de marcha', 'Avaliação de pé diabético', 'Diagnóstico de dismetrias funcionais', 'Planejamento de tratamento biomecânico']
             }
         }
     },
@@ -388,6 +406,30 @@ const produtos = {
         }
     },
 
+    'orteses': {
+        label: 'Orteses', tagClass: 'tag-blue', bgClass: 'bg-purple',
+        itens: {
+            'muleta-auxiliar': {
+                nome: 'Muleta Auxiliar',
+                imgs: [
+                    'assets/ortese/muleta-auxiliar.PNG',
+                ],
+                desc: 'Muleta ergonômica para suporte e desambulação assistida. Estrutura leve e confortável com pegadeira anatômica, indicada para auxílio de mobilidade em recuperação e reabilitação.',
+                specs: [['Material', 'Alumínio leve'], ['Altura', 'Ajustável'], ['Peso máximo', 'Até 150 kg'], ['Prazo', 'Imediato (estoque)']],
+                indicacoes: ['Auxílio na deambulação', 'Recuperação pós-operatória', 'Suporte parcial de peso', 'Reabilitação de marcha']
+            },
+            'muleta-canadense': {
+                nome: 'Muleta Canadense',
+                imgs: [
+                    'assets/ortese/muleta-canadense.PNG'
+                ],
+                desc: 'Muleta canadense (muleta tipo bastão) com suporte de antebraço articulado. Design ergonômico que distribui carga entre o membro superior e permite maior estabilidade durante a marcha.',
+                specs: [['Material', 'Alumínio anodizado'], ['Suporte', 'Antebraço articulado'], ['Altura', 'Ajustável de 0,8 a 1,2m'], ['Prazo', 'Imediato (estoque)']],
+                indicacoes: ['Suporte de longa duração', 'Distribuição de carga do membro inferior', 'Recuperação de lesões crônicas', 'Deambulação independente com suporte']
+            }
+        }
+    },
+
     'joelho': {
         label: 'Joelho / Quadril', tagClass: 'tag-blue', bgClass: 'bg-purple',
         itens: {
@@ -546,7 +588,7 @@ let currentProductKey = null;
 // ─── NAVEGAÇÃO POR SEÇÃO ───
 function showSection(id, btn) {
     currentSection = id;
-    const secIds = ['coluna', 'pe', 'mao', 'protese', 'joelho', 'cabeça', 'cotovelo'];
+    const secIds = ['coluna', 'pe', 'mao', 'protese', 'orteses', 'joelho', 'cabeça', 'cotovelo'];
     secIds.forEach(s => {
         const el = document.getElementById('sec-' + s);
         if (el) el.style.display = s === id ? 'block' : 'none';
